@@ -1,0 +1,7 @@
+phases:
+  install:
+    - docker
+  build: 
+    - cd ~/vpc_web
+    - chmod 777 ./start.sh
+    - ./start.sh
