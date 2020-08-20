@@ -8,7 +8,7 @@ echo "Start container#############################################"
 docker run -d \
            -p "8080:8080" \
            --name="${DOCKER_CONTAINER_NAME}" \
-           -v /home/ec2-user/vpc_web/:/usr/src/app \
+           -v /home/ec2-user/docker_test/front:/usr/src/app \
            -w "/usr/src/app" \
            --restart=on-failure \
            ${DOCKER_IMAGE_NAME}:${DOCKER_IMAGE_TAG} \
