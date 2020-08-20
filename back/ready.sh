@@ -4,7 +4,7 @@ DOCKER_IMAGE_NAME="was/nodejs"
 DOCKER_IMAGE_TAG="v1.0.0"
 echo "start WAS Server"
 
-cd /home/ec2-user/vpc_api
+cd /home/ec2-user/docker_test/back
 
 echo "Ready for start server #############################################"
 docker stop $(docker ps -qa) && docker rm $(docker ps -qa)
