@@ -6,7 +6,7 @@ echo "start WEB Server"
 
 echo "Start container#############################################"
 docker run -d \
-           -p "8080:8080" \
+           -p "80:80" \
            --name="${DOCKER_CONTAINER_NAME}" \
            -v /home/ec2-user/docker_test/front:/usr/src/app \
            -w "/usr/src/app" \
